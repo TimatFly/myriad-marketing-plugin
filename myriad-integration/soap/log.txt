@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:enc="http://www.w3.org/2001/09/soap-encoding" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<env:Body><env:SOAP_createContact><env:Surname>Obama</env:Surname><env:Postcode>W5 3RA</env:Postcode><env:Forename>Barrack</env:Forename><env:JobTitle_ID>1</env:JobTitle_ID><env:Country_ID>1</env:Country_ID><env:AreaCode_ID>1</env:AreaCode_ID><env:Currency_ID>1</env:Currency_ID><env:InvoiceSubscription>false</env:InvoiceSubscription><env:InvoiceFrequency_ID>1</env:InvoiceFrequency_ID><env:Initials/><env:HouseName/><env:HouseNumber/><env:Street>1-6 Ritz Parade </env:Street><env:Locality/><env:Town>London</env:Town><env:County/><env:Company>Fly M</env:Company></env:SOAP_createContact></env:Body></env:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:enc="http://www.w3.org/2001/09/soap-encoding" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><env:Body><SOAP_createContact_Response><Success xsi:type="xsd:boolean">true</Success><Contact_ID xsi:type="xsd:int">290187</Contact_ID></SOAP_createContact_Response></env:Body></env:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:enc="http://www.w3.org/2001/09/soap-encoding" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<env:Body><env:SOAP_createContactCommunication><env:Contact_ID>290187</env:Contact_ID><env:DespatchType_ID>3</env:DespatchType_ID><env:ContactCommunication>11122 23334 44</env:ContactCommunication><env:PrimaryUse>true</env:PrimaryUse></env:SOAP_createContactCommunication></env:Body></env:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:enc="http://www.w3.org/2001/09/soap-encoding" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><env:Body><SOAP_createContactCommunication_Response><Success xsi:type="xsd:boolean">true</Success><ContactCommunication_ID xsi:type="xsd:int">233607</ContactCommunication_ID></SOAP_createContactCommunication_Response></env:Body></env:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:enc="http://www.w3.org/2001/09/soap-encoding" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<env:Body><env:SOAP_createContactCommunication><env:Contact_ID>290187</env:Contact_ID><env:DespatchType_ID>1</env:DespatchType_ID><env:ContactCommunication>barra ck@fl ymark eting .co.u k</env:ContactCommunication><env:PrimaryUse>true</env:PrimaryUse></env:SOAP_createContactCommunication></env:Body></env:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:enc="http://www.w3.org/2001/09/soap-encoding" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><env:Body><SOAP_createContactCommunication_Response><Success xsi:type="xsd:boolean">true</Success><ContactCommunication_ID xsi:type="xsd:int">233608</ContactCommunication_ID></SOAP_createContactCommunication_Response></env:Body></env:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema" xmlns:enc="http://www.w3.org/2001/09/soap-encoding" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<env:Body><env:SOAP_createOrder><env:OrderType_ID>1</env:OrderType_ID><env:Paid>true</env:Paid><env:SetToLive>true</env:SetToLive><env:Packages><env:Package><env:Title_ID>2</env:Title_ID><env:OrderPackageType_ID>5</env:OrderPackageType_ID><env:DespatchMode_ID>1</env:DespatchMode_ID><env:Rate_ID>293</env:Rate_ID></env:Package></env:Packages><env:Payment><env:PrePaid><env:PaymentType_ID>16</env:PaymentType_ID><env:Amount>0.2</env:Amount><env:Currency_ID>1</env:Currency_ID><env:CreditCardToken/></env:PrePaid></env:Payment><env:InvoiceContact_ID>290187</env:InvoiceContact_ID><env:DespatchContact_ID>290187</env:DespatchContact_ID></env:SOAP_createOrder></env:Body></env:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" env:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><env:Body><Fault><faultcode>0</faultcode><faultstring>Error - Payment amount does not equal item values (based upon rates)</faultstring></Fault></env:Body></env:Envelope>
+
+
